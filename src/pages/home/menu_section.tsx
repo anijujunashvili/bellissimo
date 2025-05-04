@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const MenuSection = () => {
   return (
@@ -16,12 +17,14 @@ const MenuSection = () => {
               Simple, delicious, and made with love—just like in Italy.
             </p>
             <p className="text-center text-[#4a4848]">Buon appetito!</p>
-            <Button
-              className="bg-[#bad8d0] w-[150px] h-[45px] hover:bg-[#4a4848] shadow-sm m-auto"
-              style={{ fontSize: "18px" }}
-            >
-              Explore Menu
-            </Button>
+            <Link to="/menu" className="m-auto">
+              <Button
+                className="bg-[#bad8d0] w-[150px] h-[45px] hover:bg-[#4a4848] shadow-sm m-auto"
+                style={{ fontSize: "18px" }}
+              >
+                Explore Menu
+              </Button>
+            </Link>
           </div>
         </div>
         <div className="lg:w-1/2 h-[700px]  ">

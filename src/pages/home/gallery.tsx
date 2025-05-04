@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Gallery = () => {
   return (
@@ -38,12 +39,14 @@ const Gallery = () => {
                 you here and look forward to serving you a delicious taste of
                 Italy.
               </p>
-              <Button
-                className="bg-[#bad8d0] w-[150px] h-[45px] font-large hover:bg-[#4a4848] shadow-sm"
-                style={{ fontSize: "18px" }}
-              >
-                Gallery
-              </Button>
+              <Link to="/gallery">
+                <Button
+                  className="bg-[#bad8d0] w-[150px] h-[45px] font-large hover:bg-[#4a4848] shadow-sm"
+                  style={{ fontSize: "18px" }}
+                >
+                  Gallery
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
