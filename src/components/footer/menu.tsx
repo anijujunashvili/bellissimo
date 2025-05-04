@@ -16,7 +16,7 @@ const FooterMenu = () => {
         <li>
           <Link
             className=" border-white border-r-2 px-6"
-            to="/aboutus"
+            to="#"
             style={{ color: "white" }}
           >
             About Us
@@ -43,7 +43,7 @@ const FooterMenu = () => {
         <li className="">
           <Link
             className="text-gray-400  px-6 "
-            to="/contact"
+            to="#"
             style={{ color: "white" }}
           >
             Contact
