@@ -16,8 +16,8 @@ const ContactInfo = () => {
   return (
     <>
       <div className="w-full text-[#424645]">
-        <div className="m-auto flex flex-row">
-          <div className="w-1/2">
+        <div className="m-auto flex  flex-col-reverse lg:flex-row">
+          <div className="lg:w-1/2">
             <APIProvider
               apiKey={"AIzaSyDGF4skmrSLgdJLfMYruCeKEwKlLDZBz48"}
               onLoad={() =>
@@ -53,7 +53,7 @@ const ContactInfo = () => {
               </Map>
             </APIProvider>
           </div>
-          <div className="w-1/2  pl-12 pt-12 flex flex-col space-y-6">
+          <div className="mb-8 lg:mb-0 lg:w-1/2  pl-8 lg:pl-12 pt-12 flex flex-col space-y-6">
             <h2 className="border-l-6 mb-12 pl-3 font-bold text-4xl border-[#bad8d0]">
               Contact info
             </h2>

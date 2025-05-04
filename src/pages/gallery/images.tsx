@@ -22,7 +22,7 @@ const ImageGallery = () => {
           return (
             <div
               key={img.id}
-              className="w-1/4 h-[300px] relative overflow-hidden"
+              className="w-1/2 h-[250px] lg:w-1/4 lg:h-[300px] relative overflow-hidden"
             >
               <div
                 className="absolute z-1 top-0 left-0  w-full h-full transition-all hover:bg-black/40 hover:scale-100"

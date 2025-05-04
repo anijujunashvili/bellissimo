@@ -28,7 +28,7 @@ const MenuList = () => {
           </div>
         </ToggleGroup>
 
-        <div className="grid grid-cols-2 gap-8 transition duration-700 ease-in-out">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 transition duration-700 ease-in-out">
           {menu_list
             .filter((c) => {
               if (category != 0) return c.catId == category;
@@ -37,22 +37,26 @@ const MenuList = () => {
             .map((ml) => {
               return (
                 <div
-                  className="grid grid-cols-6 gap-4  min-h-[70px] cursor-pointer  border-b border-dashed border-[#4a4848] "
+                  className="grid grid-cols-6 gap-4  min-h-[100px] lg:min-h-[70px] cursor-pointer  border-b border-dashed border-[#4a4848] "
                   key={ml.id}
                 >
-                  <div className="w-[10s0%] h-full mb-2">
+                  <div className="w-[100%] col-span-2 lg:col-span-1 h-full mb-2">
                     <img
-                      className="rounded-sm shadow-2xl w-full h-[70px] object-cover"
+                      className="rounded-sm shadow-2xl w-full lg:h-[70px] object-cover"
                       src={`menu/${ml.image}`}
                     />
                   </div>
-                  <div className="col-span-4 mb-2 ">
+                  <div className="col-span-3 lg:col-span-4 mb-2 ">
                     <div className="flex flex-col  ">
-                      <span className="font-bold text-2xl">{ml.title}</span>
-                      <span className="text-xs">{ml.ingredients}</span>
+                      <span className="font-bold text-md lg:text-2xl">
+                        {ml.title}
+                      </span>
+                      <span className="text-xs hidden lg:visible">
+                        {ml.ingredients}
+                      </span>
                     </div>
                   </div>
-                  <div className="font-semibold flex items-center justify-end mb-2">
+                  <div className="font-semibold flex lg:items-center justify-end mb-2">
                     ${ml.price}
                   </div>
                 </div>

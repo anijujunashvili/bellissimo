@@ -12,7 +12,7 @@ import "./banner.css";
 const Banner = () => {
   return (
     <>
-      <div className="min-h-screen relative">
+      <div className="h-[600px] lg:min-h-screen relative">
         <div className="absolute w-[50px] h-[50px] z-3 animate-bounce bottom-2 left-[50%]">
           <ArrowDown size={30} color="#424645" />
         </div>
@@ -21,7 +21,7 @@ const Banner = () => {
           parallax={true}
           navigation={true}
           modules={[Parallax, Navigation]}
-          className="mySwiper min-h-screen"
+          className="mySwiper lg:min-h-screen"
         >
           <div
             slot="container-start"
@@ -34,47 +34,25 @@ const Banner = () => {
           ></div>
           <SwiperSlide>
             <div
-              className="text-white text bg-black/50 p-8 w-1/3 ml-[60%]  mt-[30%] shadow-sm"
+              className="text-white text bg-black/50 p-8 w-full mt-[60%] text-sm lg:w-1/3 lg:ml-[60%]  lg:mt-[30%] shadow-sm"
               data-swiper-parallax="-100"
             >
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
                 dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-                laoreet justo vitae porttitor porttitor. Suspendisse in sem
-                justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh
-                euismod. Aliquam hendrerit lorem at elit facilisis rutrum.
+                laoreet justo vitae porttitor porttitor.
               </p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div
-              className="text bg-gray-200/50 p-8 w-1/2 rounded-sm m-auto mt-[35%] shadow-sm"
+              className="text-white text bg-black/50 p-8 w-full mt-[60%] text-sm lg:w-1/3 lg:ml-[60%]  lg:mt-[30%] shadow-sm"
               data-swiper-parallax="-100"
             >
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
                 dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-                laoreet justo vitae porttitor porttitor. Suspendisse in sem
-                justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh
-                euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-                ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-                tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-              </p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div
-              className="text bg-gray-200/50 p-8 w-1/2 rounded-sm m-auto mt-[35%] shadow-sm"
-              data-swiper-parallax="-100"
-            >
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-                laoreet justo vitae porttitor porttitor. Suspendisse in sem
-                justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh
-                euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-                ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-                tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+                laoreet justo vitae porttitor porttitor.
               </p>
             </div>
           </SwiperSlide>

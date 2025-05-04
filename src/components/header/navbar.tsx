@@ -29,7 +29,7 @@ const Navbar = (props: PropsType) => {
           </NavLink>
         </li>
         <li className="hover:text-black">
-          <NavLink to="/aboutus" className={ActiveMenu}>
+          <NavLink to="#" className={ActiveMenu}>
             About Us
           </NavLink>
         </li>
@@ -44,7 +44,7 @@ const Navbar = (props: PropsType) => {
           </NavLink>
         </li>
         <li className=" hover:text-black">
-          <NavLink to="/contact" className={ActiveMenu}>
+          <NavLink to="#" className={ActiveMenu}>
             Contact
           </NavLink>
         </li>

@@ -3,7 +3,7 @@ import { Link } from "react-router";
 const FooterMenu = () => {
   return (
     <>
-      <ul className="flex justify-center uppercase   ">
+      <ul className="lg:flex lg:justify-center uppercase  hidden ">
         <li className="">
           <Link
             style={{ color: "white" }}

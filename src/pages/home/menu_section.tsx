@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 const MenuSection = () => {
   return (
     <>
-      <div className="w-full h-[700px] flex">
-        <div className="w-1/2 border flex items-center  ">
-          <div className="w-4/5 m-auto  flex flex-col space-y-8  ">
+      <div className="w-full  lg:h-[700px] flex flex-col lg:flex-wrap">
+        <div className="lg:w-1/2 border flex items-center  ">
+          <div className="my-8 lg:my-0 w-4/5 m-auto  flex flex-col space-y-8  ">
             <h1 className="text-2xl text-center  bg-gradient-to-r from-green-200  via-blue-300 to-pink-400 bg-clip-text text-transparent">
               Welcome to Bellissimo – A Taste of Italy
             </h1>
@@ -24,7 +24,7 @@ const MenuSection = () => {
             </Button>
           </div>
         </div>
-        <div className="w-1/2  ">
+        <div className="lg:w-1/2 h-[700px]  ">
           <img
             src="https://img.taste.com.au/-vg9OuKx/taste/2016/11/mango-panna-cotta-25208-1.jpeg"
             className="w-full h-full object-cover"

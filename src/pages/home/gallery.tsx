@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 const Gallery = () => {
   return (
     <>
-      <div className="flex h-[700px]  ">
-        <div className="w-1/2 flex flex-wrap">
+      <div className="flex flex-col-reverse lg:flex-row lg:h-[700px]  ">
+        <div className="lg:w-1/2 flex flex-wrap">
           <img
             src="https://i2-prod.nottinghampost.com/whats-on/food-drink/article690205.ece/ALTERNATES/s615/JO2JPG.jpg"
             className="w-1/2 h-1/2 object-cover"
@@ -22,14 +22,16 @@ const Gallery = () => {
             className="w-1/2 h-1/2 object-cover"
           />
         </div>
-        <div className="w-1/2 relative">
+        <div className="lg:w-1/2 relative">
           <img
             src="https://www.shutterstock.com/image-photo/beautiful-table-setting-eustoma-flowers-600nw-2464690441.jpg"
             className="w-full h-full object-cover"
           />
-          <div className="absolute top-0 left-0 z-1 bg-[#bad8d0]/45 w-full h-full flex  items-center">
-            <div className="ml-30 w-1/2 flex space-y-8 flex-col text-black">
-              <h2 className="text-4xl font-bold">Benvenuti a Bellissimo</h2>
+          <div className="pl-6 absolute top-0 left-0 z-1 bg-[#bad8d0]/45 w-full h-full flex  items-center">
+            <div className="lg:ml-30  lg:w-1/2 flex space-y-8 flex-col text-black">
+              <h2 className="text-2xl lg:text-4xl font-bold">
+                Benvenuti a Bellissimo
+              </h2>
               <p className="font-normal">
                 Welcome to Bellissimo – where Italian tradition meets warm
                 hospitality. Please wait to be seated. We’re delighted to have

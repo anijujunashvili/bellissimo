@@ -31,7 +31,7 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/contact" className={ActiveMenu}>
+          <NavLink to="#" className={ActiveMenu}>
             Contact
           </NavLink>
         </li>
