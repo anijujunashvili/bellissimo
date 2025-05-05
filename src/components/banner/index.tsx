@@ -28,7 +28,7 @@ const Banner = () => {
             className="parallax-bg"
             style={{
               backgroundImage:
-                "url(https://harperfinedining.co.uk/wp-content/uploads/2024/03/dining-table-decor-ideas.jpg)",
+                "url(https://static.vecteezy.com/system/resources/thumbnails/049/682/945/small_2x/romantic-table-setting-with-rose-bouquet-and-wine-glass-photo.jpg)",
             }}
             data-swiper-parallax="-23%"
           ></div>

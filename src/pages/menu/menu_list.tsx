@@ -51,7 +51,7 @@ const MenuList = () => {
                       <span className="font-bold text-md lg:text-2xl">
                         {ml.title}
                       </span>
-                      <span className="text-xs hidden lg:visible">
+                      <span className="text-xs hidden lg:block">
                         {ml.ingredients}
                       </span>
                     </div>
