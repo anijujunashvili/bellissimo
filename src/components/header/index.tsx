@@ -1,14 +1,7 @@
-import { AlignRight } from "lucide-react";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTrigger,
-} from "@/components/ui/sheet";
-import useScroll from "@/hooks/useScroll";
 import Navbar from "./navbar";
 import { Link } from "react-router-dom";
+import useScroll from "@/hooks/useScroll";
+import MobileNavbar from "./mobile_navbar";
 
 const Header = () => {
   const scrollVal = useScroll();
@@ -34,21 +27,7 @@ const Header = () => {
               <Navbar scrollVar={scrollVal as boolean} />
             </div>
             <div className="md:hidden">
-              <Sheet>
-                <SheetTrigger className=" ">
-                  <AlignRight
-                    size={40}
-                    color={scrollVal ? "white" : "#4a4848"}
-                  />
-                </SheetTrigger>
-                <SheetContent>
-                  <SheetHeader>
-                    <SheetDescription>
-                      This action cannot be undone.
-                    </SheetDescription>
-                  </SheetHeader>
-                </SheetContent>
-              </Sheet>
+              <MobileNavbar />
             </div>
           </div>
         </div>

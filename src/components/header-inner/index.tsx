@@ -1,13 +1,6 @@
 import Navbar from "./navbar";
 import { Link } from "react-router-dom";
-import { AlignRight } from "lucide-react";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import MobileNavbarInner from "./mobile_navbar";
 
 const HeaderInner = () => {
   return (
@@ -23,19 +16,7 @@ const HeaderInner = () => {
               <Navbar />
             </div>
             <div className="block lg:hidden">
-              <Sheet>
-                <SheetTrigger className=" ">
-                  <AlignRight size={40} color="#4a4848" />
-                </SheetTrigger>
-                <SheetContent>
-                  <SheetHeader>
-                    <SheetDescription>
-                      This action cannot be undone. This will permanently delete
-                      your account and remove your data from our servers.
-                    </SheetDescription>
-                  </SheetHeader>
-                </SheetContent>
-              </Sheet>
+              <MobileNavbarInner />
             </div>
           </div>
         </div>
