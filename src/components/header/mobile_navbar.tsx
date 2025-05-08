@@ -8,6 +8,7 @@ import {
 import { AlignRight, Facebook, Instagram } from "lucide-react";
 import useScroll from "@/hooks/useScroll";
 import { NavLink, NavLinkRenderProps } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const MobileNavbar = () => {
   const scrollVal = useScroll();
@@ -17,6 +18,8 @@ const MobileNavbar = () => {
       ? "text-[#e6e3de]  border-b-3 text-2xl"
       : "text-[#e6e3de] text-2xl";
   };
+
+  const { t } = useTranslation();
   return (
     <>
       <Sheet>
@@ -33,27 +36,27 @@ const MobileNavbar = () => {
             </h2>
             <div className="flex justify-center">
               <NavLink to="/home" className={ActiveMenu}>
-                Home
+                {t("home.home")}
               </NavLink>
             </div>
             <div className="flex justify-center">
               <NavLink to="/aboutus" className={ActiveMenu}>
-                About us
+                {t("home.about")}
               </NavLink>
             </div>
             <div className="flex justify-center">
               <NavLink to="/gallery" className={ActiveMenu}>
-                Gallery
+                {t("home.gallery")}
               </NavLink>
             </div>
             <div className="flex justify-center">
               <NavLink to="/menu" className={ActiveMenu}>
-                Menu
+                {t("home.menu")}
               </NavLink>
             </div>
             <div className="flex justify-center">
               <NavLink to="/contact" className={ActiveMenu}>
-                Contact
+                {t("home.contact")}
               </NavLink>
             </div>
             <div className="flex flex-row pt-12 justify-center gap-4">

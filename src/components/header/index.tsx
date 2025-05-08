@@ -12,7 +12,7 @@ const Header = () => {
   const logoHeight = !scrollVal
     ? "h-[50px] lg:h-[70px] transition-all duration-700"
     : "h-[50px] lg:h-[60px]  transition-all duration-700";
-  const logoImg = !scrollVal ? "logo_black.png" : "logo.png";
+  const logoImg = !scrollVal ? "/logo_black.png" : "/logo.png";
   return (
     <>
       <div className={headerStyle}>
