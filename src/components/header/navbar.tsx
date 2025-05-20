@@ -41,30 +41,30 @@ const Navbar = (props: PropsType) => {
     <>
       <ul className="flex flex-row items-center font-semibold   space-x-12 transition-all cursor-pointer">
         <li className="hover:text-black">
-          <NavLink to="/home" className={navbarStyle}>
+          <NavLink to="home" className={navbarStyle}>
             {t("home.home")}
           </NavLink>
         </li>
         <li className="hover:text-black">
-          <NavLink to="/aboutus" className={navbarStyle}>
+          <NavLink to="aboutus" className={navbarStyle}>
             {t("home.about")}
           </NavLink>
         </li>
         <li className=" hover:text-black">
-          <NavLink to="/gallery" className={navbarStyle}>
+          <NavLink to="gallery" className={navbarStyle}>
             {t("home.gallery")}
           </NavLink>
         </li>
         <li className=" hover:text-black">
-          <NavLink to="/menu" className={navbarStyle}>
+          <NavLink to="menu" className={navbarStyle}>
             {t("home.menu")}
           </NavLink>
         </li>
-        <li className=" hover:text-black">
+        {/* <li className=" hover:text-black">
           <NavLink to="/contact" className={navbarStyle}>
             {t("home.contact")}
           </NavLink>
-        </li>
+        </li> */}
         <li>
           <Select onValueChange={handleLngChange}>
             <SelectTrigger className={selectStyle}>

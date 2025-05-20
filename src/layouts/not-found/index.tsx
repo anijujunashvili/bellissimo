@@ -1,10 +1,11 @@
 import { Outlet } from "react-router-dom";
+import { PropsWithChildren } from "react";
 
-const NotFoundLayout = () => {
+const NotFoundLayout: React.FC<PropsWithChildren> = ({ children }) => {
   return (
     <main>
-      main layout
-      <Outlet />
+      not found layout
+      {children || <Outlet />}
     </main>
   );
 };

@@ -9,10 +9,10 @@ const ImageGallery = () => {
   const [open, setOpen] = useState(false);
 
   const slides = [
-    { src: "gallery/1.jpeg", id: 1 },
-    { src: "gallery/2.webp", id: 2 },
-    { src: "gallery/3.jpg", id: 3 },
-    { src: "gallery/4.jpg", id: 4 },
+    { src: "../gallery/1.jpeg", id: 1 },
+    { src: "../gallery/2.webp", id: 2 },
+    { src: "../gallery/3.jpg", id: 3 },
+    { src: "../gallery/4.jpg", id: 4 },
   ];
 
   return (

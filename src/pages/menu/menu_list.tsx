@@ -43,7 +43,7 @@ const MenuList = () => {
                   <div className="w-[100%] col-span-2 lg:col-span-1 h-full mb-2">
                     <img
                       className="rounded-sm shadow-2xl w-full lg:h-[70px] object-cover"
-                      src={`menu/${ml.image}`}
+                      src={`../menu/${ml.image}`}
                     />
                   </div>
                   <div className="col-span-3 lg:col-span-4 mb-2 ">

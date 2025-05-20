@@ -35,30 +35,30 @@ const MobileNavbar = () => {
               Main Menu
             </h2>
             <div className="flex justify-center">
-              <NavLink to="/home" className={ActiveMenu}>
+              <NavLink to="home" className={ActiveMenu}>
                 {t("home.home")}
               </NavLink>
             </div>
             <div className="flex justify-center">
-              <NavLink to="/aboutus" className={ActiveMenu}>
+              <NavLink to="aboutus" className={ActiveMenu}>
                 {t("home.about")}
               </NavLink>
             </div>
             <div className="flex justify-center">
-              <NavLink to="/gallery" className={ActiveMenu}>
+              <NavLink to="gallery" className={ActiveMenu}>
                 {t("home.gallery")}
               </NavLink>
             </div>
             <div className="flex justify-center">
-              <NavLink to="/menu" className={ActiveMenu}>
+              <NavLink to="menu" className={ActiveMenu}>
                 {t("home.menu")}
               </NavLink>
             </div>
-            <div className="flex justify-center">
+            {/* <div className="flex justify-center">
               <NavLink to="/contact" className={ActiveMenu}>
                 {t("home.contact")}
               </NavLink>
-            </div>
+            </div> */}
             <div className="flex flex-row pt-12 justify-center gap-4">
               <Facebook color="white" size={24} strokeWidth={2} />
               <Instagram color="white" size={24} strokeWidth={2} />

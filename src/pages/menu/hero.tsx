@@ -8,7 +8,7 @@ const MenuHero = () => {
             <span>From Our Heart to Your Plate</span>
           </div>
         </div>
-        <img src="menu_cover.jpg" className="w-full h-full object-cover" />
+        <img src="/menu_cover.jpg" className="w-full h-full object-cover" />
       </div>
     </>
   );
